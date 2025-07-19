@@ -1,0 +1,39 @@
+# Font
+font-family = "Fira Code"
+font-size = 14
+
+theme = GitHub-Dark-High-Contrast
+macos-icon = retro
+title=👻
+macos-titlebar-proxy-icon=hidden
+
+# keybinds
+# keybind = cmd+h=text:\x02h
+# keybind = cmd+j=text:\x02j
+# keybind = cmd+k=text:\x02k
+# keybind = cmd+l=text:\x02l
+#
+# keybind = cmd+t=text:\x02c
+# keybind = cmd+w=text:\x02x
+# keybind = cmd+m=text:\x02m
+# keybind = cmd+n=text:\x02n
+# keybind = cmd+p=text:\x02p
+#
+# keybind = cmd+s=text:\x02s
+# keybind = cmd+r=text:\x02,
+# keybind = cmd+shift+r=text:\x02$
+#
+# keybind = cmd+shift+.=text:\x02:
+# keybind = cmd+shift+5=text:\x02%
+# keybind = cmd+shift+2=text:\x02"
+#
+# keybind = cmd+1=text:\x021
+# keybind = cmd+2=text:\x022
+# keybind = cmd+3=text:\x023
+# keybind = cmd+4=text:\x024
+# keybind = cmd+5=text:\x025
+# keybind = cmd+6=text:\x026
+# keybind = cmd+7=text:\x027
+# keybind = cmd+8=text:\x028
+# keybind = cmd+9=text:\x029
+

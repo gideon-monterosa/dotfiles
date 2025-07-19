@@ -12,6 +12,7 @@
 
   home.file = {
     ".zshrc".source = ./config/zsh/zshrc;
+    ".config/ghostty/config".source = ./config/ghostty/config;
   };
 
   programs.zsh.enable = true;
