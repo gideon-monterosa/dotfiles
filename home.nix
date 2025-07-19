@@ -10,35 +10,28 @@
     fzf
   ];
 
-  programs.home-manager.enable = true;
-
-  programs.zsh = {
-    enable = true;
-    
-    shellAliases = {
-    };
-
-    history = {
-      size = 5000;
-      path = "${config.home.homeDirectory}/.zsh_history";
-      save = 5000;
-      ignoreSpace = true;
-      ignoreDups = true;
-      ignoreAllDups = true;
-      share = true;
-    };
-
-    initContent = ''
-      autoload -Uz compinit && compinit
-      eval "$(starship init zsh)"
-      eval "$(fzf --zsh)"
-
-      bindkey '^p' history-search-backward
-      bindkey '^n' history-search-forward
-
-      zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-      zstyle ':completion:*' menu no
-      zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-    '';
+  home.file = {
+    ".zshrc".source = ./config/zsh/zshrc;
   };
+
+  programs.zsh.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "Gideon Monterosa";
+    userEmail = "gideon.monterosa@gmail.com";
+
+    extraConfig = {
+      core.editor = "nvim";
+      color.ui = "auto";
+
+      push.autoSetupRemote = true;
+    };
+
+    ignores = [
+      ".DS_Store"
+    ];
+  };
+
+  programs.home-manager.enable = true;
 }
