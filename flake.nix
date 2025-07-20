@@ -26,6 +26,7 @@
 	casks = [
 	  "arc"
 	  "ghostty"
+	  "1password"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
@@ -41,10 +42,22 @@
         stateVersion = 6;
 
         defaults = {
+	  finder = {
+	    FXPreferredViewStyle = "Nlsv";
+	  };
+
           dock = {
             autohide = true;
             tilesize = 48;
           };
+
+	  trackpad = {
+	    TrackpadThreeFingerDrag = true;
+	  };
+	
+	  NSGlobalDomain = {
+	    NSAutomaticInlinePredictionEnabled = false;
+	  };
         };
 
         keyboard = {

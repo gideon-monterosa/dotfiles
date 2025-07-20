@@ -8,11 +8,22 @@
   home.packages = with pkgs; [
     starship
     fzf
+
+    # neovim config dependencies
+    nodejs_latest
+    tree-sitter
+
+    # for java development
+    openjdk21
   ];
 
   home.file = {
     ".zshrc".source = ./config/zsh/zshrc;
     ".config/ghostty/config".source = ./config/ghostty/config;
+  };
+
+  home.sessionVariables = {
+    JAVA_HOME = "${pkgs.openjdk21}/lib/openjdk";
   };
 
   programs.zsh.enable = true;
