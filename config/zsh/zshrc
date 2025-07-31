@@ -29,3 +29,4 @@ eval "$(fzf --zsh)"
 
 alias v='nvim'
 alias c='clear'
+alias switch='sudo darwin-rebuild switch'

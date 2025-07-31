@@ -27,6 +27,12 @@
 	  "arc"
 	  "ghostty"
 	  "1password"
+	  "scroll-reverser"
+	  "docker-desktop"
+	  "intellij-idea"
+	  "microsoft-teams"
+	  "microsoft-outlook"
+	  "fujifilm-x-raw-studio"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;

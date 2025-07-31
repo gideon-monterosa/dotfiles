@@ -12,6 +12,7 @@
     # neovim config dependencies
     nodejs_latest
     tree-sitter
+    markdownlint-cli
 
     # for java development
     openjdk21
@@ -23,7 +24,7 @@
   };
 
   home.sessionVariables = {
-    JAVA_HOME = "${pkgs.openjdk21}/lib/openjdk";
+    JAVA_HOME = "${pkgs.openjdk21}";
   };
 
   programs.zsh.enable = true;
@@ -36,8 +37,8 @@
     extraConfig = {
       core.editor = "nvim";
       color.ui = "auto";
-
       push.autoSetupRemote = true;
+      credential.helper = "osxkeychain";
     };
 
     ignores = [

@@ -1,39 +1,22 @@
-# Font
 font-family = "Fira Code"
 font-size = 14
 
 theme = GitHub-Dark-High-Contrast
 macos-icon = retro
-title=👻
-macos-titlebar-proxy-icon=hidden
+# title=👻
+# macos-titlebar-proxy-icon=hidden
 
-# keybinds
-# keybind = cmd+h=text:\x02h
-# keybind = cmd+j=text:\x02j
-# keybind = cmd+k=text:\x02k
-# keybind = cmd+l=text:\x02l
-#
-# keybind = cmd+t=text:\x02c
-# keybind = cmd+w=text:\x02x
-# keybind = cmd+m=text:\x02m
-# keybind = cmd+n=text:\x02n
-# keybind = cmd+p=text:\x02p
-#
-# keybind = cmd+s=text:\x02s
-# keybind = cmd+r=text:\x02,
-# keybind = cmd+shift+r=text:\x02$
-#
-# keybind = cmd+shift+.=text:\x02:
-# keybind = cmd+shift+5=text:\x02%
-# keybind = cmd+shift+2=text:\x02"
-#
-# keybind = cmd+1=text:\x021
-# keybind = cmd+2=text:\x022
-# keybind = cmd+3=text:\x023
-# keybind = cmd+4=text:\x024
-# keybind = cmd+5=text:\x025
-# keybind = cmd+6=text:\x026
-# keybind = cmd+7=text:\x027
-# keybind = cmd+8=text:\x028
-# keybind = cmd+9=text:\x029
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:down
+keybind = cmd+k=goto_split:up
+keybind = cmd+l=goto_split:right
 
+keybind = cmd+shift+h=resize_split:left,10
+keybind = cmd+shift+j=resize_split:down,10
+keybind = cmd+shift+k=resize_split:up,10
+keybind = cmd+shift+l=resize_split:right,10
+
+keybind = cmd+d=new_split:down
+keybind = cmd+shift+d=new_split:right
+
+keybind = cmd+z=toggle_split_zoom
