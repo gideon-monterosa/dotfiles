@@ -8,6 +8,10 @@
   home.packages = with pkgs; [
     starship
     fzf
+    mas
+    ripgrep
+    pkgs.texlive.combined.scheme-full
+    go
 
     # neovim config dependencies
     nodejs_latest
@@ -16,6 +20,7 @@
 
     # for java development
     openjdk21
+    # openjdk17
   ];
 
   home.file = {

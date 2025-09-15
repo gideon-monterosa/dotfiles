@@ -30,10 +30,16 @@
 	  "scroll-reverser"
 	  "docker-desktop"
 	  "intellij-idea"
+	  "visual-studio-code"
 	  "microsoft-teams"
 	  "microsoft-outlook"
+	  "microsoft-powerpoint"
 	  "fujifilm-x-raw-studio"
+	  "shottr"
 	];
+	masApps = {
+	  "Xcode" = 497799835;
+	};
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
 	onActivation.upgrade = true;
@@ -55,6 +61,13 @@
           dock = {
             autohide = true;
             tilesize = 48;
+
+            persistent-apps = [
+	      "/Applications/Arc.app"
+	      "/Applications/Ghostty.app"
+	      "/Applications/Microsoft Teams.app"
+	      "/Applications/Microsoft Outlook.app"
+	    ];
           };
 
 	  trackpad = {
@@ -78,7 +91,9 @@
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Gideons-MacBook-Pro
+    # darwin-rebuild build --flake .#Gideons-MacBook-Pro
+    # or the following alias if it has been built before:
+    # switch
     darwinConfigurations."Gideons-MacBook-Pro" = nix-darwin.lib.darwinSystem {
       modules = [ 
         configuration 
