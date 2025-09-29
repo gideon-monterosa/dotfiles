@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  imports = import ./modules;
+
   home.username = "gideon";
   home.homeDirectory = "/Users/gideon";
   home.stateVersion = "23.11";
@@ -33,23 +35,6 @@
   };
 
   programs.zsh.enable = true;
-
-  programs.git = {
-    enable = true;
-    userName = "Gideon Monterosa";
-    userEmail = "gideon.monterosa@gmail.com";
-
-    extraConfig = {
-      core.editor = "nvim";
-      color.ui = "auto";
-      push.autoSetupRemote = true;
-      credential.helper = "osxkeychain";
-    };
-
-    ignores = [
-      ".DS_Store"
-    ];
-  };
 
   programs.home-manager.enable = true;
 }
